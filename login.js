@@ -1,16 +1,16 @@
 function validation(){
     console.log("validation");
     let name = document.getElementById("name").value;
-    let phone = document.getElementById("number").value;
+    let password = document.getElementById("number").value;
     if(name.length<4)
     {
         text = "Please Enter Valid Name";
         alert(text);
         return false;
     }
-    if(isNaN(phone)||phone.length!=10)
+    if(password.length == 0)
     {
-        text = "Please Enter valid Phone Number"
+        text = "Please Enter valid Password"
         alert(text);
         return false;
     }
